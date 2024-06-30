@@ -1,0 +1,121 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: aliceblue;
+}
+#completed {
+  position: relative;
+  top: 25px;
+  left: 100px;
+  border: 1px solid white;
+  background-color: teal;
+  width: 100px;
+  padding: 10px;
+  padding-top: 25px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+#Pending {
+  top: -70px;
+  left: 1500px;
+  position: relative;
+  border: 1px solid white;
+  background-color: tomato;
+  padding-top: 25px;
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+#container {
+  width: 600px;
+  font-weight: bold;
+  height: 150px;
+  border: 3px solid black;
+  position: absolute;
+  top: 30px;
+  left: 600px;
+  background-color: rgba(0, 0, 0, 0.432);
+  border-radius: 20px;
+  font-size: 2rem;
+  color: aliceblue;
+  text-align: center;
+}
+
+h1 {
+  position: relative;
+  top: 30px;
+}
+#tasks {
+  display: flex;
+  position: absolute;
+  top: 300px;
+  left: 200px;
+  flex-direction: column-reverse;
+  background-color: rgba(0, 0, 0, 0.829);
+  border: 1px solid black;
+  width: 1400px;
+  height: auto;
+  border-radius: 20px;
+}
+.sub_tasks {
+  width: 1200px;
+  height: 50px;
+  background-color: aliceblue;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  margin: 30px;
+  margin-bottom: 35px;
+  left: 75px;
+  border-radius: 10px;
+  border: 1px solid purple;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+input::placeholder {
+  text-align: center;
+}
+button {
+  position: absolute;
+  top: 210px;
+  left: 610px;
+  width: 150px;
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: large;
+  color: white;
+  background-color: rgb(51, 102, 51);
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  opacity: 0.9;
+}
+button:hover {
+  opacity: 1;
+}
+.reset {
+  position: absolute;
+  top: 210px;
+  left: 1050px;
+  width: 150px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+  background-color: blue;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  opacity: 0.8;
+}
