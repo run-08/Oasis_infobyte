@@ -1,0 +1,72 @@
+.shower {
+  background-color: rgba(0, 0, 0, 0.603);
+  width: 1700px;
+  height: 100px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  left: 10px;
+}
+.shower > h2 {
+  position: relative;
+  top: 30px;
+}
+.container {
+  background-image: url(https://m.media-amazon.com/images/I/71eaYvMpgEL._AC_UF894,1000_QL80_.jpg);
+  width: 1000px;
+  height: 700px;
+  position: absolute;
+  top: 150px;
+  left: 550px;
+  border: 3 px solid black;
+  background-color: black;
+}
+h1 {
+  letter-spacing: 15px;
+  color: aliceblue;
+  background-color: #bbbbbb;
+  padding: 10px;
+  margin: 5px;
+}
+.photo {
+  width: 300px;
+  height: 300px;
+  background: url(https://m.media-amazon.com/images/I/71eR3p9jj7L.jpg);
+  position: relative;
+  top: 150px;
+  left: 100px;
+  bottom: 10px;
+  border: 1px solid black;
+  border-radius: 1000px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+.content {
+  background-color: aliceblue;
+  width: 1700px;
+  height: 1200px;
+  font-weight: bold;
+  text-indent: 20px;
+  position: relative;
+  top: 500px;
+  left: 5px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid black;
+}
+p {
+  text-indent: 500px;
+  padding: 20px;
+  margin: 20px;
+  text-align: justify;
+  line-height: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+address {
+  position: relative;
+  top: 400px;
+  float: right;
+}
