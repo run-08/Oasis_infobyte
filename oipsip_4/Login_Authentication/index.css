@@ -1,0 +1,164 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background: repeating-linear-gradient(rgb(124, 114, 209), pink);
+  background-repeat: no-repeat;
+  height: 860px;
+}
+.photo {
+  width: 600px;
+  height: 840px;
+  background: url(https://static.vecteezy.com/system/resources/previews/042/408/656/non_2x/man-working-on-laptop-illustration-vector.jpg);
+  position: absolute;
+  top: 10px;
+  background-size: cover;
+  left: 600px;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  opacity: 0.7;
+}
+.container {
+  display: flex;
+  width: 600px;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  left: 600px;
+  height: 840px;
+  border: 1px solid black;
+  border-radius: 20px;
+  flex-direction: column;
+}
+label {
+  font-weight: bold;
+  font-size: large;
+  margin: 30px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  width: 330px;
+  position: relative;
+  left: 120px;
+  border: 2px solid black;
+  height: 50px;
+  border-top-color: transparent;
+  background-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.1em;
+  color: aliceblue;
+}
+input:hover {
+  border: 1px solid transparent;
+  border-bottom: 2px solid purple;
+}
+input::placeholder {
+  text-align: center;
+}
+#sub {
+  width: 120px;
+  position: relative;
+  top: 40px;
+  height: 50px;
+  display: inline-block;
+  left: 20px;
+  background-color: rgb(125, 238, 125);
+  border: 1px solid black;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+#res {
+  width: 120px;
+  top: -10px;
+  position: relative;
+  height: 50px;
+  display: inline-block;
+  left: 450px;
+  background-color: tomato;
+  border: 1px solid black;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+#sub:hover {
+  transition: 1s;
+  background-color: green;
+}
+#res:hover {
+  transition: 1s;
+  background-color: rgb(172, 7, 7);
+}
+hr {
+  width: 460px;
+  height: 3px;
+  position: relative;
+  top: 30px;
+}
+.another_site {
+  width: 450px;
+  height: 100px;
+  position: relative;
+  top: 40px;
+  left: 70px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.another_site > button {
+  padding: 25px;
+  background-color: white;
+  margin: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  border-radius: 10px;
+}
+.another_site > button:hover {
+  transition: 1s;
+  background-color: rgba(190, 107, 190, 0.164);
+  color: white;
+}
+#pop_up {
+  display: none;
+  border: 1px solid black;
+  width: 150px;
+  position: absolute;
+  top: 400px;
+  text-align: center;
+  background-color: rgb(4, 4, 94);
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: larger;
+  left: 200px;
+}
+#pop_up > a {
+  text-decoration: none;
+  color: white;
+}
+#pop_up:hover {
+  background-color: rgb(99, 99, 250);
+}
+p {
+  transition: 1s;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  position: relative;
+  top: -7px;
+}
+mark {
+  background-color: transparent;
+  color: darkblue;
+}
