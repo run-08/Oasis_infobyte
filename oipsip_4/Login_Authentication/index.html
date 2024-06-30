@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Validation</title>
+    <script src="Authentication.js"></script>
+  </head>
+  <body>
+    <div id="sign_up">
+      <div class="photo"></div>
+      <div class="container" id="sign">
+        <form>
+          <label for="userName">Name</label>
+          <input type="text" placeholder="Enter Your Name" id="userName" />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            placeholder="Enter Your Password"
+            id="password"
+          />
+          <label for="confirm_password">Confirm Password</label>
+          <input
+            type="password"
+            placeholder="Re Enter The Password"
+            id="confirm_password"
+          />
+          <button type="submit" id="sub" onclick="store()">Register</button>
+          <button type="reset" id="res">Reset</button>
+          <hr />
+          <div class="another_site">
+            <button>Sign With Google</button>
+            <button>Sign With Facebook</button>
+            <p>
+              Already Registered?
+              <a href="index1.html" target="_blank"><mark>click here</mark></a>
+            </p>
+          </div>
+        </form>
+        <div id="pop_up">
+          <a href="index1.html">Click Here</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
