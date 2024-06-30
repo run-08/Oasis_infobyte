@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do-To-App</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="completed">
+      Completed
+      <p id="c_val">0</p>
+    </div>
+    <div id="Pending">
+      Pending
+      <p id="p_val">0</p>
+    </div>
+    <input
+      id="container"
+      placeholder="Create The Task"
+      value="                  "
+      min="10"
+      max="50"
+    />
+
+    <button type="submit" onclick="show()">Submit</button>
+    <button class="reset" onclick="reset()">Reset</button>
+    <div id="tasks"></div>
+
+    <script>
+      var task_bar = document.getElementById("container");
+      var tasks_parent = document.getElementById("tasks");
+      var task_count = 0;
+      var complete_count = 0;
+      var pending_count = 0;
+      task_bar.addEventListener("onmouseover", function () {
+        task_bar.style.backgroundColor = "whitesmoke";
+        task_bar.style.border = "4px solid teal";
+        task_bar.style.color = "rgba(0, 0, 0, 0.603)";
+      });
+      function show() {
+        var div_element = document.createElement("div");
+        div_element.setAttribute("class", "sub_tasks");
+        div_element.setAttribute("id", `div${++task_count}`);
+        var node = document.createTextNode(task_bar.value);
+        div_element.appendChild(node);
+        var button = document.createElement("button");
+        button.style.border = "1px solid black";
+        button.style.width = "20px";
+        button.style.height = "20px";
+        button.style.borderRadius = "50%";
+        button.style.position = "absolute";
+        button.style.top = "20px";
+        button.style.left = "1150px";
+        button.style.backgroundColor = "tomato";
+        button.setAttribute("id", `btn${task_count}`);
+        button.setAttribute("onclick", `btn(${task_count})`);
+        div_element.appendChild(button);
+        task_bar.value = "";
+        tasks_parent.appendChild(div_element);
+        document.getElementById("p_val").textContent = ++pending_count;
+      }
+      const reset = () => (task_bar.value = " ");
+      function btn(btn_number) {
+        var button = document.getElementById(`btn${btn_number}`);
+        button.style.backgroundColor = "green";
+        const remove = () => {
+          var child_Element = document.getElementById(`div${btn_number}`);
+          tasks_parent.removeChild(child_Element);
+          document.getElementById("p_val").textContent = --pending_count;
+          document.getElementById("c_val").textContent = ++complete_count;
+        };
+        setTimeout(remove(), 1000);
+      }
+    </script>
+  </body>
+</html>
