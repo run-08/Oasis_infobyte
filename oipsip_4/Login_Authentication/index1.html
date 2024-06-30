@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="Authentication.js"></script>
+  </head>
+  <body>
+    <div
+      class="photo"
+      style="
+        background: url(https://img.freepik.com/premium-vector/cartoon-illustration-boy-with-glasses-working-laptop_835197-5825.jpg);
+        top: 100px;
+        height: 650px;
+      "
+      id="show_off"
+    ></div>
+    <div class="container" style="height: 650px; top: 100px">
+      <form>
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter Your Name" id="name" />
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter The Email" id="email" />
+        <label for="pass">Password</label>
+        <input type="password" placeholder="Enter Your Password" id="pass" />
+        <label for="con_pass">Confirm Password</label>
+        <input
+          type="password"
+          placeholder="Re Enter The Password"
+          id="con_pass"
+        />
+        <button type="submit" id="sub" onclick="check()">Submit</button>
+        <button type="reset" id="res">Reset</button>
+      </form>
+    </div>
+  </body>
+</html>
